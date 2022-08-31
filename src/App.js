@@ -1,10 +1,16 @@
+// context
+import { GithubState } from "./context/GithubContext";
+
+// styles
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+    <GithubState>
+      <div className="App">
+        <h1>hello</h1>
+      </div>
+    </GithubState>
   );
 }
 
