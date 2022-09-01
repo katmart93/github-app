@@ -1,15 +1,16 @@
 // context
 import { GithubState } from "./context/GithubContext";
 
+// components
+import Hero from "./components/Hero";
+
 // styles
 import "./App.css";
 
 function App() {
   return (
     <GithubState>
-      <div className="App">
-        <h1>hello</h1>
-      </div>
+      <Hero />
     </GithubState>
   );
 }
