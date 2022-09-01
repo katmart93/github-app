@@ -6,7 +6,6 @@ export default function Overview() {
   const { overview } = useContext(GithubContext);
   let id = 0;
 
-  console.log(overview);
   return (
     <div className="overviewContainer">
       {overview &&
