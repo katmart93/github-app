@@ -6,9 +6,10 @@ import Container from "./Container";
 import Nav from "./Nav";
 import User from "./User";
 import ReposNav from "./ReposNav";
+import ReposContainer from "./ReposContainer";
 
 export default function Hero() {
-  const { user } = useContext(GithubContext);
+  const { user, error } = useContext(GithubContext);
 
   return (
     <section className="hero">
@@ -19,10 +20,11 @@ export default function Hero() {
             <User />
             <div className="wrapper">
               <ReposNav />
+              <ReposContainer />
             </div>
           </>
         ) : (
-          <p>No user found...</p>
+          <p className="noUser">{error}</p>
         )}
       </Container>
     </section>
