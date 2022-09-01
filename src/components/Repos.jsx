@@ -4,7 +4,7 @@ import { GithubContext } from "../context/GithubContext";
 
 export default function Repos() {
   const { repos } = useContext(GithubContext);
-  console.log(repos);
+
   return (
     <>
       {repos &&

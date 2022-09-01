@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 // components
 import Overview from "./Overview";
 import Repos from "./Repos";
+import Followers from "./Followers";
 
 export default function ReposContainer() {
   return (
@@ -9,7 +10,7 @@ export default function ReposContainer() {
       <Routes>
         <Route path="/overview" element={<Overview />} />
         <Route path="/repos" element={<Repos />} />
-        <Route path="/followers" />
+        <Route path="/followers" element={<Followers />} />
       </Routes>
     </div>
   );
