@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Overview() {
-  return <div>Overview</div>;
+  return <h1>Overview</h1>;
 }
