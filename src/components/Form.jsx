@@ -1,3 +1,4 @@
+// context
 import { useContext } from "react";
 import { GithubContext } from "../context/GithubContext";
 
