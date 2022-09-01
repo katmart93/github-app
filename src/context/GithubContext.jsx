@@ -46,7 +46,7 @@ export const GithubState = ({ children }) => {
   const getOverview = () => {
     fetch(`https://api.github.com/users/${search}/repos?per_page=8&sort=asc`)
       .then((res) => res.json())
-      .then((data) => setRepos(data));
+      .then((data) => setOverview(data));
   };
 
   const getFollowers = () => {

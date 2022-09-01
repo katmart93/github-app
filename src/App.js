@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // context
 import { GithubState } from "./context/GithubContext";
 // components
@@ -10,7 +10,9 @@ function App() {
   return (
     <GithubState>
       <BrowserRouter>
-        <Hero />
+        <Routes>
+          <Route path="/*" element={<Hero />} />
+        </Routes>
       </BrowserRouter>
     </GithubState>
   );
