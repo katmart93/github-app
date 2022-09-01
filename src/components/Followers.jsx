@@ -5,7 +5,6 @@ import { GithubContext } from "../context/GithubContext";
 export default function Followers() {
   const { followers } = useContext(GithubContext);
 
-  console.log(followers);
   return (
     <>
       {followers &&

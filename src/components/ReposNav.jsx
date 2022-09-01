@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function ReposNav() {
   return (
-    <div className="reposContainer">
+    <div className="reposNav">
       <NavLink
         className={(navData) => (navData.isActive ? "active" : "")}
         to="/overview"
