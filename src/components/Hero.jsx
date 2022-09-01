@@ -5,6 +5,7 @@ import { GithubContext } from "../context/GithubContext";
 import Container from "./Container";
 import Nav from "./Nav";
 import User from "./User";
+import ReposNav from "./ReposNav";
 
 export default function Hero() {
   const { user } = useContext(GithubContext);
@@ -16,7 +17,9 @@ export default function Hero() {
         {user ? (
           <>
             <User />
-            <div className="wrapper"></div>
+            <div className="wrapper">
+              <ReposNav />
+            </div>
           </>
         ) : (
           <p>No user found...</p>
